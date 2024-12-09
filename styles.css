@@ -1,0 +1,185 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333; /* Текст заголовка по умолчанию */
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #0056b3;
+}
+
+.version {
+    text-align: center;
+    color: #777;
+}
+
+/* Стиль для темной темы */
+body.dark-mode {
+    background-color: #333;
+    color: #fff; /* Текст в тёмной теме белый */
+}
+
+body.dark-mode h1 {
+    color: #fff; /* Заголовок в тёмной теме белый */
+}
+
+body.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #555;
+}
+
+body.dark-mode .menu-button {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode .menu-button:hover {
+    background-color: #444;
+}
+
+body.dark-mode .version {
+    color: #ccc; /* Светлый текст версии в тёмной теме */
+}
+
+/* Стиль для таблиц */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавное изменение фона и цвета */
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #f2f2f2;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Стиль для строк с ID 1, 2, 3 */
+.styled-table tr[id="id1"],
+.styled-table tr[id="id2"],
+.styled-table tr[id="id3"] {
+    background-color: #f9f9f9; /* Светлый фон для всех строк с ID 1, 2, 3 */
+    color: #333; /* Темный текст для этих строк */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавное изменение фона и цвета */
+}
+
+/* Стиль для таблиц в темной теме */
+body.dark-mode .styled-table th {
+    background-color: #444; /* Темный фон для заголовков таблицы */
+    color: #fff; /* Белый текст */
+}
+
+body.dark-mode .styled-table td {
+    background-color: #555; /* Темный фон для ячеек */
+    color: #fff; /* Белый текст */
+}
+
+body.dark-mode .styled-table tr:nth-child(even) {
+    background-color: #666; /* Более светлый фон для четных строк */
+}
+
+body.dark-mode .styled-table tr:hover {
+    background-color: #777; /* Светлый фон при наведении на строку */
+}
+
+/* Стиль для строк с ID 1, 2, 3 в темной теме */
+body.dark-mode .styled-table tr[id="id1"],
+body.dark-mode .styled-table tr[id="id2"],
+body.dark-mode .styled-table tr[id="id3"] {
+    background-color: #444; /* Темный фон для строк с ID 1, 2, 3 в темной теме */
+    color: #fff; /* Белый текст для этих строк */
+}
+
+/* Стиль для кнопки выхода */
+.logout-button {
+    background-color: #e74c3c;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Стиль для элемента "Добро пожаловать" */
+.welcome-text {
+    font-size: 18px;
+    color: #333;
+}
+
+body.dark-mode .welcome-text {
+    color: #fff; /* Белый текст в тёмной теме */
+}
+
+/* Стили для кнопки переключения темы */
+#theme-toggle {
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#theme-toggle:hover {
+    background-color: #e68900;
+}
+
+/* Текст в темной теме */
+body.dark-mode .welcome-text {
+    color: #fff; /* Белый текст в тёмной теме */
+}
+
+body.dark-mode .version {
+    color: #ccc; /* Светлый текст версии в тёмной теме */
+}
